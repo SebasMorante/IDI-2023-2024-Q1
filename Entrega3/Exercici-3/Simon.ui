@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Simon</class>
+ <widget class="QWidget" name="Simon">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>598</width>
+    <height>734</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Simon</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <spacer name="horizontalSpacer_6">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="MyLabel" name="label_3">
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text">
+        <string>Preparat per començar!</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_7">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <item>
+      <widget class="MyLabel" name="pantalla">
+       <property name="minimumSize">
+        <size>
+         <width>400</width>
+         <height>400</height>
+        </size>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Puntuació:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="MyLabel" name="label_2">
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>0</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>78</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="VermellButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="palette">
+        <palette>
+         <active>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </active>
+         <inactive>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </inactive>
+         <disabled>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </disabled>
+        </palette>
+       </property>
+       <property name="text">
+        <string>&amp;1 Vermell</string>
+       </property>
+       <property name="autoDefault">
+        <bool>false</bool>
+       </property>
+       <property name="default">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="VerdButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="palette">
+        <palette>
+         <active>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </active>
+         <inactive>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </inactive>
+         <disabled>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </disabled>
+        </palette>
+       </property>
+       <property name="text">
+        <string>&amp;2 Verd</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="BlauButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="palette">
+        <palette>
+         <active>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>0</red>
+             <green>0</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </active>
+         <inactive>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>0</red>
+             <green>0</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </inactive>
+         <disabled>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>0</red>
+             <green>0</green>
+             <blue>255</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </disabled>
+        </palette>
+       </property>
+       <property name="text">
+        <string>&amp;3 Blau</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="GrogButton">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+         <horstretch>30</horstretch>
+         <verstretch>30</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="baseSize">
+        <size>
+         <width>10</width>
+         <height>10</height>
+        </size>
+       </property>
+       <property name="palette">
+        <palette>
+         <active>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </active>
+         <inactive>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </inactive>
+         <disabled>
+          <colorrole role="Button">
+           <brush brushstyle="SolidPattern">
+            <color alpha="255">
+             <red>255</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </brush>
+          </colorrole>
+         </disabled>
+        </palette>
+       </property>
+       <property name="text">
+        <string>&amp;4 Grog</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>78</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <spacer name="horizontalSpacer_8">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="minimumSize">
+          <size>
+           <width>340</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>&amp;Play</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_9">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <spacer name="horizontalSpacer_10">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="MyLabel" name="label_4">
+         <property name="text">
+          <string>Fes clic a &quot;Play&quot; per començar!</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_11">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QPushButton" name="ResetButton">
+       <property name="text">
+        <string>&amp;Reset</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="SortirButton">
+       <property name="text">
+        <string>&amp;Sortir</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MyLabel</class>
+   <extends>QLabel</extends>
+   <header location="global">MyLabel.h</header>
+   <slots>
+    <signal>atent()</signal>
+    <signal>torn()</signal>
+    <signal>punts()</signal>
+    <signal>perdut()</signal>
+    <signal>reset()</signal>
+    <signal>guanyat()</signal>
+    <signal>cleanp()</signal>
+    <signal>elimPlay()</signal>
+    <signal>cleaninfo()</signal>
+    <signal>warning()</signal>
+    <signal>showinfo()</signal>
+    <slot>startSeq()</slot>
+    <slot>mostraSeq()</slot>
+    <slot>vermB()</slot>
+    <slot>verdB()</slot>
+    <slot>blauB()</slot>
+    <slot>grogB()</slot>
+    <slot>InfoAtent()</slot>
+    <slot>InfoTorn()</slot>
+    <slot>InfoPunts()</slot>
+    <slot>InfoPerdut()</slot>
+    <slot>ResetGame()</slot>
+    <slot>InfoReset()</slot>
+    <slot>InfoPreparat()</slot>
+    <slot>CleanPunts()</slot>
+    <slot>InfoGuanyat()</slot>
+    <slot>CleanInfo()</slot>
+    <slot>WarningInfo()</slot>
+    <slot>MostraInfo()</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>SortirButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Simon</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>508</x>
+     <y>691</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>597</x>
+     <y>628</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>pantalla</receiver>
+   <slot>startSeq()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>444</x>
+     <y>637</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>210</x>
+     <y>453</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>VermellButton</sender>
+   <signal>clicked()</signal>
+   <receiver>pantalla</receiver>
+   <slot>vermB()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>178</x>
+     <y>541</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>245</x>
+     <y>228</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>VerdButton</sender>
+   <signal>clicked()</signal>
+   <receiver>pantalla</receiver>
+   <slot>verdB()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>282</x>
+     <y>541</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>250</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>BlauButton</sender>
+   <signal>clicked()</signal>
+   <receiver>pantalla</receiver>
+   <slot>blauB()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>361</x>
+     <y>541</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>238</x>
+     <y>407</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>GrogButton</sender>
+   <signal>clicked()</signal>
+   <receiver>pantalla</receiver>
+   <slot>grogB()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>450</x>
+     <y>541</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>107</x>
+     <y>436</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pantalla</sender>
+   <signal>atent()</signal>
+   <receiver>label_3</receiver>
+   <slot>InfoAtent()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>396</x>
+     <y>209</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>348</x>
+     <y>22</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pantalla</sender>
+   <signal>torn()</signal>
+   <receiver>label_3</receiver>
+   <slot>InfoTorn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>452</x>
+     <y>120</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>374</x>
+     <y>39</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pantalla</sender>
+   <signal>punts()</signal>
+   <receiver>label_2</receiver>
+   <slot>InfoPunts()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>523</x>
+     <y>397</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>371</x>
+     <y>492</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pantalla</sender>
+   <signal>perdut()</signal>
+   <receiver>label_3</receiver>
+   <slot>InfoPerdut()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>241</x>
+     <y>110</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>344</x>
+     <y>43</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ResetButton</sender>
+   <signal>clicked()</signal>
+   <receiver>pantalla</receiver>
+   <slot>ResetGame()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>36</x>
+     <y>707</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>33</x>
+     <y>451</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pantalla</sender>
+   <signal>reset()</signal>
+   <receiver>label_3</receiver>
+   <slot>InfoPreparat()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>319</x>
+     <y>104</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>336</x>
+     <y>22</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ResetButton</sender>
+   <signal>clicked()</signal>
+   <receiver>label_2</receiver>
+   <slot>CleanPunts()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>72</x>
+     <y>702</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>373</x>
+     <y>481</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pantalla</sender>
+   <signal>guanyat()</signal>
+   <receiver>label_3</receiver>
+   <slot>InfoGuanyat()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>564</x>
+     <y>79</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>430</x>
+     <y>28</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pantalla</sender>
+   <signal>cleanp()</signal>
+   <receiver>label_2</receiver>
+   <slot>CleanPunts()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>457</x>
+     <y>440</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>365</x>
+     <y>485</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pantalla</sender>
+   <signal>cleaninfo()</signal>
+   <receiver>label_4</receiver>
+   <slot>CleanInfo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>84</x>
+     <y>451</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>201</x>
+     <y>665</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pantalla</sender>
+   <signal>warning()</signal>
+   <receiver>label_4</receiver>
+   <slot>WarningInfo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>565</x>
+     <y>441</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>393</x>
+     <y>664</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pantalla</sender>
+   <signal>showinfo()</signal>
+   <receiver>label_4</receiver>
+   <slot>MostraInfo()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>541</x>
+     <y>448</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>287</x>
+     <y>672</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
